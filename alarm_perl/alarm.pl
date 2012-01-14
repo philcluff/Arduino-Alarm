@@ -40,7 +40,6 @@ while (1) {
                     print "WARN triggered, but alert not sent.\n";
                     next;
                 }
-
             }
 
             # No, this isn't my API key... anylonger.
@@ -54,8 +53,6 @@ while (1) {
             # Update the last time we sent an alert.
             $warning_last_sent = time();
         }
-
-
     }
     else {
         # Sleep for slightly less time than the frequency with which the arduino sends information.
