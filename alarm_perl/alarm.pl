@@ -56,7 +56,8 @@ while (1) {
         }
 
 
-    } else {
+    }
+    else {
         # Sleep for slightly less time than the frequency with which the arduino sends information.
         usleep(400000);
     }
