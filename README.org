@@ -1,0 +1,25 @@
+* Arduino Alarm
+
+** Overview
+
+A door alarm that uses an Arduino to talk to a linux box, which in turn can send alerts to iOS devices using Prowl.
+
+** Requirements
+
+*** Arduino
+
+Built and tested for Arduino Uno
+
+*** Perl
+
+Tested with Perl 5.8.9, the following non-core perl modules are required:
+Device::SerialPort
+WebService::Prowl
+
+*** Linux Box
+
+Tested with Ubuntu 10.10, no special drivers needed, standard USB to Serial driver is included. If you also wish to run the Arduino IDE on the Ubuntu box, you'll need to do more work.
+
+*** Prowl Account
+
+You can get a prowl account at https://www.prowlapp.com and the app on the app store.
