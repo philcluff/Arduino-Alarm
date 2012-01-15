@@ -42,6 +42,8 @@ while (1) {
                 }
             }
 
+            print "Sending alert to prowl.\n";
+
             # No, this isn't my API key... anylonger.
             my $ws = WebService::Prowl->new(apikey => "f4d6eeea81d811057581ec7f1df5f20b1d177008");
             $ws->verify || die $ws->error();
